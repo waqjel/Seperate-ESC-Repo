@@ -1,5 +1,3 @@
-
-import { toggleModal } from "./main.js";
 import {fetchChallenges} from './api.js';
 
 //-------------------Create card-------------------//
