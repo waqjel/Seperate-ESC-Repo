@@ -247,8 +247,6 @@ header h1 {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-=======
 .btn3 {
   background-color: #8ACFE5;
   font-family: "Roboto";
@@ -306,7 +304,6 @@ header h1 {
   content: "\e163";
 }
 
->>>>>>> 24bfa9907860729b9ca0017b8685c6f2bb12b3a4
 @media (min-width: 768px) {
   .top img {
     height: 500px;
@@ -504,139 +501,6 @@ header h1 {
   justify-content: flex-start;
 }
 
-<<<<<<< HEAD
-/* Note: This Section is temperory and will be changed later with the SCSS styling done by Markus for the Model part*/
-/*Book this room Modal*/
-.modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 100px; 
-  left: 0;
-  top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
-}
-
-/* Modal Content */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 10% auto;
-    padding: 30px;
-    border-radius: 3px;
-    width: 90%;
-    height: 50vh;
-    max-width: 500px;
-    position: relative;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-}
-
-/* Form Styles */
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 600;
-    color: #333;
-}
-
-.form-group input {
-    width: 50%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-    box-sizing: border-box;
-}
-
-.form-group input:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
-}
-
-.form-group select {
-    width: 50%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-    box-sizing: border-box;
-}
-
-.form-group select:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
-}
-.modal button {
-    background-color:  #0056b3;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    transition: background-color 0.2s;
-    right:0;
-    bottom: 0;
-    margin:20px;
-    position:absolute;
-}
-
-#modal3 h2{
-  font-size: 30px;
-  text-align: center;
-  margin-top: 30%;
-}
-
-#modal3 a{
-  text-align: center;
-  margin-left: 36%;
-}
-
-.submit-btn:hover {
-    background-color: #2982e0;
-}
-/* ---------------------- Modal temperory CSS ends here ------------------------------ */
-
-=======
->>>>>>> 24bfa9907860729b9ca0017b8685c6f2bb12b3a4
 @media (min-width: 999px) {
   .panel h1 {
     font-size: 36px;
@@ -720,8 +584,6 @@ header h1 {
   width: auto;
   font-size: 24px;
   margin: 20px 20px 50px;
-<<<<<<< HEAD
-=======
 }
 .promos .btn3 {
   background-color: #8ACFE5;
@@ -757,7 +619,6 @@ header h1 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
->>>>>>> 24bfa9907860729b9ca0017b8685c6f2bb12b3a4
 }
 
 @media (min-width: 768px) and (max-width: 999px) {
@@ -1206,6 +1067,106 @@ footer .footerRight {
     margin-bottom: 6px;
   }
 }
+/*Book this room Modal*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
 body {
   font-family: "Roboto";
   font-weight: bold;
