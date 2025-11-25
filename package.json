@@ -1,0 +1,30 @@
+{
+  "name": "esc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --no-source-map src/main.scss output.css",
+    "watch-sass": "sass --watch --no-source-map src/main.scss output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marieapellLernia/ESC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marieapellLernia/ESC/issues"
+  },
+  "homepage": "https://github.com/marieapellLernia/ESC#readme",
+<<<<<<< HEAD
+  "dependencies": {
+    "sass": "^1.94.1"
+=======
+
+  "devDependencies": {
+    "sass": "^1.94.0"
+
+>>>>>>> 24bfa9907860729b9ca0017b8685c6f2bb12b3a4
+  }
+}

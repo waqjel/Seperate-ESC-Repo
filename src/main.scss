@@ -1,0 +1,15 @@
+@use "sections/header";
+@use "sections/top";
+@use "sections/review";
+@use "sections/panel";
+@use "sections/story";
+@use "sections/promos";
+@use "sections/footer";
+@use "sections/filter";
+
+body {
+    font-family: "Roboto";
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
