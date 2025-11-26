@@ -142,6 +142,13 @@ async function bookingRoomReservation(event, modal) {
                     dateInput.min = new Date().toISOString().split("T")[0];
                 }
 
+                // Limit participants
+                const participantsInput = modal1.querySelector("#participants");
+                if (participantsInput) {
+                    participantsInput.min = 1;
+                    participantsInput.value = 1;
+                }
+
                 // Set room title in ALL modals
                 const roomTitles = modal.querySelectorAll('.bookedRoom-title');
                 if (roomTitles.length > 0) {
@@ -167,7 +174,23 @@ async function bookingRoomReservation(event, modal) {
                                 }
                             }
                         });
-                        
+
+                        // Set participants list based on min/max from API
+                        const participantsSelect = modal.querySelector("#participants");
+                        if (participantsSelect && challengeTitle) {
+                            participantsSelect.innerHTML = "";
+
+                            const min = challengeTitle.minParticipants;
+                            const max = challengeTitle.maxParticipants;
+
+                            for (let i = min; i <= max; i++) {
+                                const option = document.createElement("option");
+                                option.value = i;
+                                option.textContent = `${i} participant${i > 1 ? "s" : ""}`;
+                                participantsSelect.appendChild(option);
+                            }
+                        }
+
                         bookingData.challengeTitle = challengeTitle;
                     } catch (error) {
                         console.error('Error fetching challenge title:', error);
