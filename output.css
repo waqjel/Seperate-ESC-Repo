@@ -1150,6 +1150,15 @@ footer .footerRight {
   box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }
 
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
 .submit-btn {
   background-color: #007bff;
   color: white;
