@@ -136,6 +136,12 @@ async function bookingRoomReservation(event, modal) {
             if (modal1) {
                 modal1.style.display = "block";
                 
+                // User cant select a past date
+                const dateInput = modal1.querySelector("#date");
+                if (dateInput) {
+                    dateInput.min = new Date().toISOString().split("T")[0];
+                }
+
                 // Set room title in ALL modals
                 const roomTitles = modal.querySelectorAll('.bookedRoom-title');
                 if (roomTitles.length > 0) {
