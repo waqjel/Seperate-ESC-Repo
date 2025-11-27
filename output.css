@@ -1153,7 +1153,9 @@ footer .footerRight {
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
-  width: 100%;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
   transition: background-color 0.2s;
 }
 
